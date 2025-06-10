@@ -6,7 +6,7 @@ ENV LC_ALL C.UTF-8
 
 RUN apt update && apt upgrade -y \
   # install tools
-  && apt install -y --no-install-recommends nasm
+  && apt install -y --no-install-recommends nasm binutils
 
 # add user and set home directory
 ARG USER=asm
